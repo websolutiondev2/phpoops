@@ -22,13 +22,13 @@
     ", mysqli_connect_error());
                 exit();
             }
-            // return true;
-            $this->sd = "Working";
+            return true;
+            // $this->sd = "Working";
         }
     
     }
 
-    $s = new Connect();
+    // $s = new Connect();
 
     // echo $s->sd;
 ?>  
