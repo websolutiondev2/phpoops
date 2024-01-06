@@ -13,7 +13,7 @@
         // Open a connect to the database.
         // Make sure this is called on every page that needs to use the database.
         
-        public function con() {
+        public function __construct() {
         
             $connect_db = new mysqli( $this->db_host, $this->db_user, $this->db_pass, $this->db_name );
             
@@ -22,13 +22,13 @@
     ", mysqli_connect_error());
                 exit();
             }
-            return true;
-            
+            // return true;
+            $this->sd = "Working";
         }
     
     }
 
     $s = new Connect();
 
-    echo $s->con();
+    // echo $s->sd;
 ?>  
