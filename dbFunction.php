@@ -1,5 +1,5 @@
 <?php
-require_once ('dbConnect.php');
+require_once ('Connect.php');
 
 session_start();
 
@@ -8,7 +8,7 @@ class dbFunction
     function __construct()
     {
         //connecting to database
-        $db = new dbConnect();
+        $db = new Connect();
     }
 
     function destruct()
